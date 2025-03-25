@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Flask App{% endblock %}
+
+{% block content %}
+    <h1 class="heading"> Welcome Everyone!</h1>
+    <p>Explore dynamic pages below:</p>
+    <div class="buttons">
+        <a href="/user/Guest" class="btn">👤 Visit Profile</a>
+        <a href="/about" class="btn">ℹ️ Learn More</a>
+    </div>
+    <img class="custom-img" src="{{ url_for('static', filename='welcome_image.jpeg') }}" alt="Welcome Image">
+
+{% endblock %}
